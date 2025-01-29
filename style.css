@@ -1,0 +1,108 @@
+/* Reset Default Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+/* Background with Blur Effect */
+body {
+    background-image: url("ab.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark Overlay for Better Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+/* Form Container */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Placeholder Text */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus Effect */
+input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    border-bottom: 3px solid #ffeb3b;
+}
+
+/* Predict Button */
+button {
+    background: linear-gradient(90deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 75, 43, 0.3);
+}
+
+/* Button Hover Effect */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #ff4b2b, #ff416c);
+    box-shadow: 0 6px 20px rgba(255, 75, 43, 0.4);
+}
+
+/* Prediction Text */
+#predi {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
